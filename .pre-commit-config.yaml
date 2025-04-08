@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: clear-notebook-outputs
+        name: Clear Jupyter Notebook Outputs
+        entry: python src/tools/clear_outputs.py
+        language: system
+        types: [jupyter]
